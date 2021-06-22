@@ -4,6 +4,24 @@ Using different deep learning model to detect image contain blood or no
 
 **Note: This is the initial phase of the Repo, designed for Classification stage of Blood-No_Blood-classification.
 
+# Training 
+Used Google colab to train the different model. Here are the following step to create the model
+    
+    1. Importing library
+    2. Data preprocessing
+        2.1 Creating test set
+        2.2 Configure the dataset for performance
+        2.3 Use data augmentation
+        2.4 Rescale pixel values
+    3. Create the base model from the pre-trained convnets
+        3.1 Compile the model
+        3.2 Train the model
+        3.3 Learning curves
+    4. Fine tuning
+        4.1 Un-freeze the top layers of the model
+        4.2 Compile the model
+    5. Evaluation and prediction 
+
 
 # Instruction To Run Test Code
 
