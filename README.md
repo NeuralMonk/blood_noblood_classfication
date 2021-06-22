@@ -68,7 +68,7 @@ Used Google colab to train the different model. Here are the following step to c
 
 # Instruction To Run Test Code
 
-1. Download DenseNet model can be downloaded from here: https://drive.google.com/file/d/1KHRZhqNlXN9xFpZr8y8L6nExc-d7H9S8/view?usp=sharing
+1. Download DenseNet model can be downloaded from here: https://drive.google.com/drive/folders/102B4J_V8TFO4ihs31WcLBzCgq8B3Yc65?usp=sharing
 
 3. Save model file to location: src > saved_model > Densenet121 
 
@@ -95,9 +95,10 @@ On successful execution of above command, Output will be found in results/reslul
 
 ## Approach 2 for custom input output directory
 
-`    parser.add_argument("-dp","--dir_path",
-                        help="Path to a directory containing images.", default=os.path.join(os.getcwd(), "Smart_Preview"))
-    parser.add_argument("-op","--output_path",
+`parser.add_argument("-dp","--dir_path",
+                        help="Path to a directory containing images.", default=os.path.join(os.getcwd(), "Smart_Preview"))`
+                        
+`parser.add_argument("-op","--output_path",
                         help="Output Path to a directory containing images.", default=os.path.join(os.getcwd(), "results"))`
                         
 1. Run `python3 app.py -dp <input_path_directory> -op <output_path_directory>
