@@ -3,6 +3,32 @@ Using different deep learning model to detect image contain blood or no
 
 
 **Note: This is the initial phase of the Repo, designed for Classification stage of Blood-No_Blood-classification.
+# Directory structure
+```bash
+├── src
+│   ├── Data // Folder contains image_dataset.csv which have all the paths of converted and intial images    
+│   ├── results
+│   │        └──results
+│   │                   └── UNIQUE_TIMESTAMP_FOLDER for EACH RUN
+│   ├── saved_model // put the DenseNet121 model from thh drive link
+│   ├── app.py // main program to run 
+│   ├── dng_to_jpg // preprocessing image to jpg
+│   ├── normalize_histogram.py 
+│   ├── preprocessing_image.py
+│   ├── path_utils.py 
+│   ├── time_utils.py
+│   ├── resize.py
+│   └── requirement.txt // to create virtual  environment
+│
+│
+├── training
+│      └── training_and_evaluating.ipynb
+├── model
+│      └──model_download_link.txt // text file which contain download drive link for all the models
+│
+├── README.md
+└── .gitignore
+```
 
 # Training 
 Used Google colab to train the different model. Here are the following step to create the model
@@ -53,8 +79,9 @@ Used Google colab to train the different model. Here are the following step to c
     - windows: Run `<name of virtual env>\env\Scripts\activate.bat`
 5. Change working directory to 'src'
 5. Run `pip install -r requirements.txt`
-6. Run `python3 app.py`
+6. put images in the smart_preview folder
+7. Run `python3 app.py`
 
 
-On successful execution of above command, Output files will be created in output directory
+On successful execution of above command, Output will be found in results/reslult/UNIQUE_TIMESTAMP_FOLDER
 
