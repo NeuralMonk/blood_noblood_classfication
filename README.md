@@ -22,6 +22,23 @@ Used Google colab to train the different model. Here are the following step to c
         4.2 Compile the model
     5. Evaluation and prediction 
 
+## Different model accuracy on test data
+    1. DenseNet121 --> 93.75 (which i fairly good and that's why we used it)
+        1/1 [==============================] - 1s 769ms/step - loss: 0.2913 - accuracy: 0.9375
+        Test accuracy : 0.9375
+        
+    2. MobileNetV2 --> 84.23 
+        1/1 [==============================] - 1s 709ms/step - loss: 0.3213 - accuracy: 0.8423
+        Test accuracy : 0.8423
+    
+    3. ResNet50 --> 72.55 
+        1/1 [==============================] - 1s 869ms/step - loss: 0.4513 - accuracy: 0.7255
+        Test accuracy : 0.7255
+    
+    4. EfficentNetB2 --> 61.43 
+        1/1 [==============================] - 1s 888ms/step - loss: 0.5913 - accuracy: 0.6143
+        Test accuracy : 0.6143
+
 
 # Instruction To Run Test Code
 
