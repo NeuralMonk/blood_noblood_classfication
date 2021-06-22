@@ -85,3 +85,23 @@ Used Google colab to train the different model. Here are the following step to c
 
 On successful execution of above command, Output will be found in results/reslult/UNIQUE_TIMESTAMP_FOLDER
 
+# CLI
+
+## Approach 1
+
+1. Put the test images in the smart_preview folder
+2. Run python3 app.py
+3. Results will be in result/results/ UNIQUE TIME STAMP FOLDER FOR EACH RUN
+
+## Approach 2 for custom input output directory
+
+`    parser.add_argument("-dp","--dir_path",
+                        help="Path to a directory containing images.", default=os.path.join(os.getcwd(), "Smart_Preview"))
+    parser.add_argument("-op","--output_path",
+                        help="Output Path to a directory containing images.", default=os.path.join(os.getcwd(), "results"))`
+                        
+1. Run `python3 app.py -dp <input_path_directory> -op <output_path_directory>
+2. Result will be in output_path_directory
+
+
+## Thank you
